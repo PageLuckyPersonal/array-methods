@@ -185,3 +185,4 @@ console.log(animeListings.length);
 
 /* Array Method 17 -   */
 //add your git notes
+// sometimes you have to pull to clone or clone to pull
