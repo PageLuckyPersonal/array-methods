@@ -131,3 +131,57 @@ let adorbsStuff = ['Pikachu', 'seal squishy', 'shiba magnet', 'plushie', 'fat sh
 
 var isItThere = adorbsStuff.includes('plushie');
 console.log(isItThere);
+// it returns true, there is an adorable plushie there! You're so lucky!
+
+/* Array Method 12 - .indexOf() */
+//What is we have a really big array with thousands of lines and we need to know what line one item is on?
+//if it's not there, you'll see -1, this works on objects, but findIndex works on easier primitives
+//only the first index of whatever you search is returned
+//These customers entered in their favorite passtimes on a children's website, did fishing or watching YouTube make the cut?
+let indexArray = ['soccer', "playing video games", 'not socializing','watching YouTube', 'throwing things','sleeping','fishing'];
+
+var lookingAtPasstimes = indexArray.indexOf('watching YouTube');
+console.log(lookingAtPasstimes);
+//Yes, someone enjoys watching YouTube in spot 3
+
+var areTheyFishing = indexArray.indexOf('fishing');
+console.log(areTheyFishing);
+// Yes at index 6 someone enjoys fishing
+
+
+/* Array Method 13 - isArray() */
+//type of will always call an array an object. If you really need to know if it's an array
+//just use isArray() to find out
+//is this an array?
+let animeListings = ['clover','attack on titan','sakura','strawberry panic','host club'];
+console.log(animeListings);
+console.log(Array.isArray(animeListings));
+// This returns true, it IS an array
+
+
+/* Array Method 14 - .join() */
+// this method will return an array as a string
+// let's recycle the array above. How can we turn that array into a string?
+
+var newAnimeListings = animeListings.join();
+//check, is it a string?
+console.log(typeof newAnimeListings);
+//"string", yep it is a string
+
+/* Array(Object) Method 15 - .keys() */
+//Returns an array iterator object with the keys of an array
+//Though listed as an array method it requires an object to work
+let smallGirlProblems = {Annoyance1:'huge chairs', Annoyance2:'tall cabinets', Annoyance3:'strong boyfriend', Annoyance4:'big spoons',Annoyance5:'large meals'};
+var theIterator = Object.keys(smallGirlProblems);
+console.log(theIterator);
+
+/* Array Method 16 - .length  */
+//NOTE length does not require ()
+// .length can be used to see how many things are in an array
+// it's also used to run function or for loops through everything in an array
+// It works on arrays, it does NOT work on objects, for objects use .keys()
+console.log(animeListings.length);
+
+
+/* Array Method 17 -   */
+//add your git notes
