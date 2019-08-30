@@ -183,6 +183,26 @@ console.log(theIterator);
 console.log(animeListings.length);
 
 
-/* Array Method 17 -   */
-//add your git notes
-// sometimes you have to pull to clone or clone to pull
+/* Array Method 17 - .lastIndexOf()  */
+// returns -1 if query isn't found
+// searches for something and returns its index
+// let it run through from the start or specify a starting point
+// instead of returning the first instance, it returns the last
+
+let funnyAnimals = ['sloth', 'hamster', 'swan','turtle','sloth'];
+console.log(funnyAnimals);
+console.log(funnyAnimals.lastIndexOf('sloth'));
+//the last mention of a sloth if found at index number 4
+
+
+/* Array Method 18 - .map() */
+// One of the most used
+// Creates a new array by calling a function it runs on every element
+// doesn't work on elements without values
+//find the square root of these numbers
+let someAges = [50, 15, 2, 37, 56, 32];
+var howOld = someAges.map(Math.sqrt);
+console.log(howOld);
+
+
+
